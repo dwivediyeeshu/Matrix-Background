@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix Rain Glow</title>
+
+    <style>
+      :root {
+        --accent: #00ff66; /* slightly lighter neon green for glow */
+      }
+
+      body {
+        margin: 0;
+        background: radial-gradient(circle at 30% 30%, #020617, #000);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+        overflow: hidden;
+      }
+
+      @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      canvas#matrix {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="matrix"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
