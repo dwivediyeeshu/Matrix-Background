@@ -9,7 +9,7 @@ A glowing **Matrix-style digital rain** animation using **HTML, CSS, and JavaScr
 
 ### 🛠️ Usage
 1. Clone or download the repo.  
-2. Open `index.html` in your browser.  
+2. Open `mandrix1.html` in your browser.  
 
 ### 🎨 Customize
 Edit in `script.js`:
